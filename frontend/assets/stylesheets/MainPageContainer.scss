@@ -1,0 +1,28 @@
+.main-container-bg-pic {
+  background: url('http://res.cloudinary.com/dclmhv0zu/image/upload/v1522798170/Papers.co-sk25-romantic-sky-purple-red-yellow-blur-gradation-android-large.jpg');
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+.main-container-wrapper {
+  display: flex;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

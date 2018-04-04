@@ -3,7 +3,9 @@ import { render } from 'react-dom';
 import { configureStore, history } from './store/configureStore';
 import Root from './containers/Root';
 
-import './assets/stylesheets/base.scss';
+import './assets/stylesheets/MainPageContainer.scss';
+import './assets/stylesheets/Login.scss';
+
 
 const store = configureStore();
 

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+.login-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 36px;
+  color: white;
+}
+
+.login-wraper {
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-row-gap: 0.7em;
+  justify-items: center;
+}
+
+input {
+  outline: none;
+}
+
+.login-password {
+  font-weight: 300;
+  padding-top: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  display: flex;
+  width: 270px;
+  height: 28px;
+  background-color: #D3D3D3;
+  opacity: 0.3;
+  border-style: none;
+  border-radius: 1px;
+}
+
+::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.login-username {
+  padding-top: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  display: flex;
+  width: 270px;
+  height: 28px;
+  background-color: #D3D3D3;
+  opacity: 0.3;
+  border-style: none;
+  border-radius: 1px;
+}
