@@ -3,13 +3,13 @@
 
 .login-title {
   font-family: 'Pacifico', cursive;
-  font-size: 36px;
+  font-size: 40px;
   color: white;
 }
 
 .login-wraper {
   display: grid;
-  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 12.5% 12.5%;
   grid-row-gap: 0.7em;
   justify-items: center;
 }
@@ -21,38 +21,74 @@ input {
 .login-password {
   font-weight: 300;
   padding-top: 4px;
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 4px;
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  color: black;
+  font-size: 17px;
   display: flex;
   width: 270px;
   height: 28px;
-  background-color: #D3D3D3;
-  opacity: 0.3;
+  background-color: rgba(211, 211, 211, 0.3);
   border-style: none;
-  border-radius: 1px;
+  border-radius: 2px;
 }
 
 ::placeholder {
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
   font-weight: 300;
+  color: #29282d;
+  opacity: 0.7;
+}
+
+.login-button:hover {
+  cursor: pointer;
+}
+
+.login-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 288px;
+  height: 34px;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 17px;
 }
 
 .login-username {
   padding-top: 4px;
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 4px;
   font-family: 'Roboto', sans-serif;
+  color: black;
   font-size: 17px;
   display: flex;
   width: 270px;
   height: 28px;
-  background-color: #D3D3D3;
-  opacity: 0.3;
+  background-color: rgba(211, 211, 211, 0.3);
   border-style: none;
-  border-radius: 1px;
+  border-radius: 2px;
+}
+
+.login-signup-text {
+  text-decoration: underline;
+}
+
+.login-signup-account {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 12px;
+}
+
+.login-signup-text:hover {
+  cursor: pointer;
 }

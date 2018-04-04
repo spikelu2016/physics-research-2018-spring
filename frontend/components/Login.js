@@ -15,10 +15,19 @@ const Login = ( {} ) => {
             type="password"
             className="login-password"
             placeholder="password"/>
-          <button
-            type="button">
-            Login
-          </button>
+          <div
+            type="button"
+            className="login-button">
+            Log In
+          </div>
+          <div
+            className="login-signup-account">
+            Don't have an account?&nbsp;
+            <span
+              className="login-signup-text">
+            Sign up
+            </span>
+          </div>
         </div>
     );
 };
