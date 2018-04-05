@@ -8,7 +8,7 @@ const MainPageContainer = ( {} ) => {
     return (
         <div className="main-container-bg-pic">
           <div className="main-container-wrapper">
-            <Login />
+            {/* <Login /> */}
             {/* <Signup /> */}
           </div>
         </div>

@@ -3,12 +3,14 @@ import React from 'react';
 import { connect } from 'react-redux';
 // import Title from '../components/Title';
 import MainPageContainer from './MainPageContainer';
+import ChatContainer from './ChatContainer';
 
 const AppContainer = ({ name }) => {
     return (
         <div>
             {/* <Title name={name} /> */}
-            <MainPageContainer />
+            {/* <MainPageContainer /> */}
+            <ChatContainer />
         </div>
     );
 };
