@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+.banner-wrapper {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.banner {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-bottom-style: solid;
+  border-bottom-color: #e3e3e6;
+  border-bottom-width: 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  z-index: 9999;
+}
+
+.banner-icon {
+  height: 32px;
+}
+
+.banner-groupper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner-line {
+  height: 32px;
+  border-left: 1px solid black;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.banner-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 28px;
+  color: black;
+}

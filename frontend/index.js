@@ -7,6 +7,8 @@ import './assets/stylesheets/MainPageContainer.scss';
 import './assets/stylesheets/Login.scss';
 import './assets/stylesheets/Signup.scss';
 import './assets/stylesheets/ChatContainer.scss';
+import './assets/stylesheets/Banner.scss';
+
 
 
 

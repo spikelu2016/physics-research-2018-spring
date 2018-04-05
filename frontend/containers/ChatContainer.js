@@ -1,22 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Banner from '../components/Banner';
 
 
 const ChatContainer = ( {} ) => {
     return (
-        <div className="chat-container-header">
-          <div className="chat-container-header-wrapper">
-            <div className="chat-container-header-groupper">
-              <img
-                className="chat-contaner-header-icon"
-                src="http://res.cloudinary.com/dclmhv0zu/image/upload/v1522940832/noun_115068_cc.png"/>
-              <div className="chat-container-line">
+        <div>
+          <Banner />
+          <div className="chat-box-wrapper">
+            <div className="chat-box-container">
+              <div className="chat-box-people-list-container">
               </div>
-              <div className="chat-container-title">
-                chatbox
+              <div className="chat-box-chat-container">
               </div>
-            </div>
-            <div className="chat-container-spacer">
             </div>
           </div>
         </div>
