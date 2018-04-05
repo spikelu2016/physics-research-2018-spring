@@ -8,8 +8,8 @@ const MainPageContainer = ( {} ) => {
     return (
         <div className="main-container-bg-pic">
           <div className="main-container-wrapper">
-            {/* <Login /> */}
-            <Signup />
+            <Login />
+            {/* <Signup /> */}
           </div>
         </div>
     );

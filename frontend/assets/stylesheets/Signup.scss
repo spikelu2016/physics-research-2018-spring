@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 
-.login-title {
+.signup-title {
   font-family: 'Pacifico', cursive;
   font-size: 40px;
   color: white;
 }
 
-.login-wrapper {
+.signup-slogan {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 3px;
+  opacity: 0.75;
+}
+
+.signup-wrapper {
   display: grid;
-  grid-template-rows: 16.7% 16.7% 16.7% 16.7% 16.7% 16.7%;
+  grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
   grid-row-gap: 0.7em;
   justify-items: center;
 }
@@ -18,7 +26,7 @@ input {
   outline: none;
 }
 
-.login-password {
+.signup-password {
   font-weight: 300;
   padding-top: 4px;
   padding-left: 10px;
@@ -44,11 +52,11 @@ input {
   opacity: 0.7;
 }
 
-.login-button:hover {
+.signup-button:hover {
   cursor: pointer;
 }
 
-.login-button {
+.signup-button {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -64,7 +72,7 @@ input {
   font-size: 17px;
 }
 
-.login-username {
+.signup-username {
   padding-top: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -80,27 +88,48 @@ input {
   border-radius: 2px;
 }
 
-.login-signup-text {
+.signup-fullname {
+  padding-top: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 4px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 17px;
+  display: flex;
+  width: 270px;
+  height: 28px;
+  background-color: rgba(211, 211, 211, 0.3);
+  border-style: none;
+  border-radius: 2px;
+}
+
+.signup-email {
+  padding-top: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 4px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 17px;
+  display: flex;
+  width: 270px;
+  height: 28px;
+  background-color: rgba(211, 211, 211, 0.3);
+  border-style: none;
+  border-radius: 2px;
+}
+
+.signup-login-text {
   text-decoration: underline;
 }
 
-.login-signup-account {
+.signup-login-account {
   font-family: 'Roboto', sans-serif;
   color: white;
   font-size: 12px;
 }
 
-.login-signup-forgot-password {
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  font-size: 12px;
-  margin-bottom: 10px;
-}
-
-.login-signup-forgot-password:hover {
-  cursor: pointer;
-}
-
-.login-signup-text:hover {
+.signup-login-text:hover {
   cursor: pointer;
 }

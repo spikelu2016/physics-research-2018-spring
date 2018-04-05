@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Login = ( {} ) => {
     return (
-        <div className="login-wraper">
+        <div className="login-wrapper">
           <div className="login-title">
             chatbox
           </div>
@@ -19,6 +19,10 @@ const Login = ( {} ) => {
             type="button"
             className="login-button">
             Log In
+          </div>
+          <div
+            className="login-signup-forgot-password">
+            Forgot your password?
           </div>
           <div
             className="login-signup-account">

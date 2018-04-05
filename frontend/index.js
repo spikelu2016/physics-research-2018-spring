@@ -5,6 +5,8 @@ import Root from './containers/Root';
 
 import './assets/stylesheets/MainPageContainer.scss';
 import './assets/stylesheets/Login.scss';
+import './assets/stylesheets/Signup.scss';
+
 
 
 const store = configureStore();
