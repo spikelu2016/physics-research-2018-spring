@@ -1,22 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Login from '../components/Login';
-import Signup from '../components/Signup';
 
 
-const MainPageContainer = ( {} ) => {
+const LoginPageContainer = ( {} ) => {
     return (
         <div className="main-container-bg-pic">
           <div className="main-container-wrapper">
-            {/* <Login /> */}
-            {/* <Signup /> */}
+            <Login />
           </div>
         </div>
     );
 };
 
-MainPageContainer.propTypes = {
+LoginPageContainer.propTypes = {
 };
 
 
-export default MainPageContainer;
+export default LoginPageContainer;

@@ -20,6 +20,44 @@ const ChatContainer = ( {} ) => {
               </div>
               <div className="chat-box-chat-container">
                 <div className="chat-box-chat-container-chat-space">
+                  <div className="chat-box-chat-container-chat-space-wrapper">
+                    <div className="chat-box-chat-container-chat-space-profile-name">
+                      <img className="chat-box-chat-container-chat-space-profile"
+                      src="http://res.cloudinary.com/dclmhv0zu/image/upload/v1523040961/555cd827049321.5635f4f5b110f.png"/>
+                      <div className="chat-box-chat-container-chat-space-name">
+                        Vincent
+                      </div>
+                    </div>
+                    <div className="chat-box-chat-container-chat-space-message">
+                      What's up bruh? Long time no see
+                    </div>
+                  </div>
+
+                  <div className="chat-box-chat-container-chat-space-wrapper">
+                    <div className="chat-box-chat-container-chat-space-profile-name">
+                      <img className="chat-box-chat-container-chat-space-profile"
+                      src="http://res.cloudinary.com/dclmhv0zu/image/upload/v1523040961/555cd827049321.5635f4f5b110f.png"/>
+                      <div className="chat-box-chat-container-chat-space-name">
+                        Vincent
+                      </div>
+                    </div>
+                    <div className="chat-box-chat-container-chat-space-message">
+                      What's up bruh? Long time no see
+                      What's up bruh? Long time no see
+                      What's up bruh? Long time no see
+                      What's up bruh? Long time no see
+                      What's up bruh? Long time no see
+                      What's up bruh? Long time no see
+                      What's up bruh? Long time no see
+                      What's up bruh? Long time no see
+                      What's up bruh? Long time no see
+                      What's up bruh? Long time no see
+                      What's up bruh? Long time no see
+                      What's up bruh? Long time no see
+                      What's up bruh? Long time no see
+                      What's up bruh? Long time no sees
+                    </div>
+                  </div>
 
                 </div>
                 <div className="chat-box-chat-container-type-space">

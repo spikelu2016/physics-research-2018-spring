@@ -1,36 +1,38 @@
-import PropTypes from 'prop-types';
-import React from 'react';
+import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-// import Title from '../components/Title';
-import MainPageContainer from './MainPageContainer';
-import ChatContainer from './ChatContainer';
+import Routes from './Routes'
+import { BrowserRouter } from 'react-router-dom';
+import io from 'socket.io-client'
 
-const AppContainer = ({ name }) => {
+
+class AppContainer extends Component {
+  constructor(props) {
+    super(props)
+  }
+  render() {
     return (
-        <div>
-            {/* <Title name={name} /> */}
-            {/* <MainPageContainer /> */}
-            <ChatContainer />
-        </div>
+      <BrowserRouter>
+        <Routes />
+      </BrowserRouter>
     );
-};
+  }
+}
 
-AppContainer.propTypes = {
-    name: PropTypes.string,
-};
+// AppContainer.propTypes = {
+//     name: PropTypes.string,
+// };
 
-const mapStateToProps = (state) => {
-    return {
-        name: state.name
-    };
-};
+function mapStateToProps(state) {
+  return {
+  };
+}
 
-const mapDispatchToProps = (/* dispatch */) => {
-    return {
-    };
-};
+function mapDispatchToProps(dispatch) {
+  return {
+  };
+}
 
 export default connect(
-    mapStateToProps,
-    mapDispatchToProps
+  mapStateToProps,
+  mapDispatchToProps
 )(AppContainer);

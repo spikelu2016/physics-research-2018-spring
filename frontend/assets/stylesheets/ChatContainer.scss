@@ -79,6 +79,41 @@
   background-color: transparent;
 }
 
+.chat-box-chat-container-chat-space-profile-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.chat-box-chat-container-chat-space-profile {
+  height: 40px;
+}
+
+.chat-box-chat-container-chat-space-name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  color: black;
+}
+
+.chat-box-chat-container-chat-space-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  // border-style: solid;
+  // border-width: medium;
+}
+
+.chat-box-chat-container-chat-space-message {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
 textarea {
   outline: none;
 }

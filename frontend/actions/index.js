@@ -1,3 +1,8 @@
-// Action Creators
+import { SET_USER } from './types';
 
-// import * as types from './types';
+export function setUser(user) {
+  return {
+    type: SET_USER,
+    user
+  }
+}
