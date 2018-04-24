@@ -8,11 +8,16 @@
   margin-top: 100px;
 }
 
+.chat-box-chat-container-chat-space {
+  overflow: scroll;
+}
+
 .chat-box-people-list-container {
   height: 550px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   background-color: #444752;
+  overflow: scroll;
 }
 
 .chat-box-people-list-profile-pic {

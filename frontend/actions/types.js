@@ -1,1 +1,5 @@
 export const SET_USER = "SET_USER";
+export const SET_SOCKET = "SET_SOCKET";
+export const ADD_NEW_MESSAGE = "ADD_NEW_MESSAGE";
+export const SET_ALL_ONLINE_USERS = "SET_ALL_ONLINE_USERS";
+export const ADD_NEW_ONLINE_USER = "ADD_NEW_ONLINE_USER";

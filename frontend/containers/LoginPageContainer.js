@@ -1,20 +1,39 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { Component, PropTypes } from 'react';
+import { connect } from 'react-redux';
+
 import Login from '../components/Login';
 
+class LoginPageContainer extends Component {
+  constructor(props) {
+    super(props)
 
-const LoginPageContainer = ( {} ) => {
+  }
+
+  render() {
     return (
-        <div className="main-container-bg-pic">
-          <div className="main-container-wrapper">
-            <Login />
-          </div>
+      <div className="main-container-bg-pic">
+        <div className="main-container-wrapper">
+          <Login history={this.props.history}/>
         </div>
+      </div>
     );
-};
+  }
+}
 
 LoginPageContainer.propTypes = {
 };
 
+function mapStateToProps(state) {
+  return {
+  };
+}
 
-export default LoginPageContainer;
+function mapDispatchToProps(dispatch) {
+  return {
+  };
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(LoginPageContainer);

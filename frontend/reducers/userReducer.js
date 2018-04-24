@@ -1,4 +1,4 @@
-import { SET_USER } from '../actions/index';
+import { SET_USER } from '../actions/types';
 
 
 const initialState = {
@@ -7,11 +7,9 @@ const initialState = {
 
 export default function (state = initialState, action) {
   switch (action.type) {
-
   case SET_USER:
-  var newState = Object.assign({}, state, {user: action.user})
-  return newState
-
+    var newState = Object.assign({}, state, {user: action.user})
+    return newState
   default:
     return state;
   }

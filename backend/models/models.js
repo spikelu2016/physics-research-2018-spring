@@ -8,6 +8,10 @@ const userSchema = mongoose.Schema({
     type: String,
     required: true
   },
+  username:{
+    type: String,
+    required: true
+  },
   lastname:{
     type: String,
     required: true
@@ -19,11 +23,26 @@ const userSchema = mongoose.Schema({
   password:{
     type: String,
     required: true
+  },
+  profilepic: {
+    type: String,
+    required: true
   }
 });
 
+const chatSchema = mongoose.Schema({
+  chatRoomName:{
+    type: String,
+    required: true
+  },
+  onlineUsers:[]
+});
+
 const User = mongoose.model('User', userSchema);
+const Chat = mongoose.model('Chat', chatSchema);
+
 
 module.exports = {
-  User
+  User,
+  Chat
 }

@@ -13,6 +13,8 @@ module.exports = function(passport) {
     req.checkBody('lastname', 'Lastname cannot be empty').notEmpty();
     req.checkBody('email', 'Invalid email').isEmail();
     req.checkBody('password', 'Lastname cannot be empty').notEmpty();
+    req.checkBody('profilepic', 'profilepic cannot be empty').notEmpty();
+
 
     req.getValidationResult()
     .then(function(result){
@@ -40,6 +42,7 @@ module.exports = function(passport) {
             firstname: req.body.firstname,
             lastname: req.body.lastname,
             email: req.body.email,
+            profilepic: req.body.profilepic,
             password: hash
           });
 
@@ -72,7 +75,7 @@ module.exports = function(passport) {
   });
 
   // POST Login page
-  router.post('/login', passport.authenticate('local', {'failureRedirect': '/failure'} ), function(req, res) {
+  router.post('/login', passport.authenticate('local', {'failureRedirect': '/api/failure'} ), function(req, res) {
     var responseUser = Object.assign({}, req.user)
     var responseUser = responseUser._doc;
     delete responseUser.password;

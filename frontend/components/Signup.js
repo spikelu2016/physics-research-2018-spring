@@ -11,11 +11,22 @@ class Signup extends Component {
       lastname: "",
       email: "",
       username: "",
-      password: ""
+      password: "",
+      profilepics: ["http://res.cloudinary.com/dclmhv0zu/image/upload/v1523040961/555cd827049321.5635f4f5b110f.png",
+                    "http://res.cloudinary.com/dclmhv0zu/image/upload/v1524609869/6.png",
+                    "http://res.cloudinary.com/dclmhv0zu/image/upload/v1524609869/1.png",
+                    "http://res.cloudinary.com/dclmhv0zu/image/upload/v1524609869/5.png",
+                    "http://res.cloudinary.com/dclmhv0zu/image/upload/v1524609869/4.png",
+                    "http://res.cloudinary.com/dclmhv0zu/image/upload/v1524609869/3.png",
+                    "http://res.cloudinary.com/dclmhv0zu/image/upload/v1524609869/2.png"]
     }
   }
 
-  redirect() {
+  redirectChatbox() {
+    this.props.history.push('/chatbox');
+  }
+
+  redirectLogin() {
     this.props.history.push('/');
   }
 
@@ -48,12 +59,15 @@ class Signup extends Component {
 
   handleRegister(e) {
     e.preventDefault();
+    var randomNum = Math.floor(Math.random()*this.state.profilepics.length)
+    console.log(randomNum);
     axios.post('http://localhost:3000/api/register', {
       firstname: this.state.firstname,
       lastname: this.state.lastname,
       email: this.state.email,
       username: this.state.username,
       password: this.state.password,
+      profilepic: this.state.profilepics[randomNum]
     })
     .then((r) => {
       if(r.data.error) {
@@ -62,14 +76,14 @@ class Signup extends Component {
           console.log("r.data.error", r.data.error);
         })
       } else {
-          this.props.setUserAction(r.data.response);
-          this.redirect();
+        this.props.setUserAction(r.data.response);
+        this.redirectChatbox();
       }
     })
-      .catch((err) => {
-        console.log("there was an error with the request : ", err);
-      })
-    }
+    .catch((err) => {
+      console.log("there was an error with the request : ", err);
+    })
+  }
 
   render() {
     return (
@@ -83,22 +97,22 @@ class Signup extends Component {
           <input
             type="text"
             className="signup-email"
-            onChange={(e) => this.handleEmailNameChange(event)}
+            onChange={(e) => this.handleEmailNameChange(e)}
             placeholder="email"/>
           <input
             type="text"
             className="signup-fullname"
-            onChange={(e) => this.handleFullNameChange(event)}
+            onChange={(e) => this.handleFullNameChange(e)}
             placeholder="fullname"/>
           <input
             type="text"
             className="signup-username"
-            onChange={(e) => this.handleUserNameChange(event)}
+            onChange={(e) => this.handleUserNameChange(e)}
             placeholder="username"/>
           <input
             type="password"
             className="signup-password"
-            onChange={(e) => this.handlePasswordChange(event)}
+            onChange={(e) => this.handlePasswordChange(e)}
             placeholder="password"/>
           <div
             type="button"
@@ -110,6 +124,7 @@ class Signup extends Component {
             className="signup-login-account">
             Have an account?&nbsp;
             <span
+              onClick={() => this.redirectLogin()}
               className="signup-login-text">
             Log In
             </span>
@@ -131,11 +146,6 @@ const mapDispatchToProps = dispatch => {
     }
   }
 }
-
-
-Signup.propTypes = {
-};
-
 
 
 
