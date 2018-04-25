@@ -36,7 +36,7 @@ class ChatPageContainer extends Component {
 
   componentWillMount() {
     this.props.socket.emit('join', 'public');
-    axios.post('http://localhost:3000/api/addNewOnlineUser', this.props.user)
+    axios.post('https://intense-ocean-22228.herokuapp.com/api/addNewOnlineUser', this.props.user)
     .then((r) => {
       if(r.data.error) {
       } else {
