@@ -33,6 +33,7 @@ class Login extends Component {
   handleLogin(e) {
     e.preventDefault();
     var port = process.env.PORT;
+    console.log("port: " + port);
     axios.post('http://localhost:' + port + '/api/login', {
       username: this.state.username,
       password: this.state.password,
