@@ -61,7 +61,8 @@ class Signup extends Component {
     e.preventDefault();
     var randomNum = Math.floor(Math.random()*this.state.profilepics.length)
     console.log(randomNum);
-    axios.post('https://intense-ocean-22228.herokuapp.com/api/register', {
+    var port = process.env.PORT;
+    axios.post('http://localhost:' + port + '/api/register', {
       firstname: this.state.firstname,
       lastname: this.state.lastname,
       email: this.state.email,

@@ -32,7 +32,8 @@ class Login extends Component {
 
   handleLogin(e) {
     e.preventDefault();
-    axios.post('https://intense-ocean-22228.herokuapp.com/api/login', {
+    var port = process.env.PORT;
+    axios.post('http://localhost:' + port + '/api/login', {
       username: this.state.username,
       password: this.state.password,
     })
