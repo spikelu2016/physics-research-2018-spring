@@ -61,8 +61,7 @@ class Signup extends Component {
     e.preventDefault();
     var randomNum = Math.floor(Math.random()*this.state.profilepics.length)
     console.log(randomNum);
-    var port = process.env.PORT;
-    axios.post('http://localhost:' + port + '/api/register', {
+    axios.post('http://localhost:3000/api/register', {
       firstname: this.state.firstname,
       lastname: this.state.lastname,
       email: this.state.email,

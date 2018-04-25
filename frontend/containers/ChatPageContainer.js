@@ -36,8 +36,7 @@ class ChatPageContainer extends Component {
 
   componentWillMount() {
     this.props.socket.emit('join', 'public');
-    var port = process.env.PORT;
-    axios.post('http://localhost:' + port + '/api/addNewOnlineUser', this.props.user)
+    axios.post('http://localhost:3000/api/addNewOnlineUser', this.props.user)
     .then((r) => {
       if(r.data.error) {
       } else {
